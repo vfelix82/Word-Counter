@@ -5,10 +5,10 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
     [TestClass]
-    public class TemplateTest
+    public class WordCounterTest
     {
-        [TestMethod, TestCategory("DeckGeneration")]
-        public void TestATemplateTestObject()
+        [TestMethod]
+        public void Test()
         {
 
         }

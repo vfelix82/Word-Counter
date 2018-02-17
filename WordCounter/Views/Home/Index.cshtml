@@ -1,0 +1,35 @@
+@{ Layout = "_Layout"; }
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Word Counter</h1>
+            <h2>A simple program that counts the frequency of a word from the group of words you enter.</h2>
+            <form action='/' method='post'>
+                <div class='form-group'>
+                    <label for='groupofwords'>Enter a group of words:</label>
+                    <input id='groupofwords' name='groupofwords' class='form-control' type='text'>
+                </div>
+                <div class='form-group'>
+                    <label for='title'>Enter specific word:</label>
+                    <input id='title' name='title' class='form-control' type='text'>
+                </div>
+                <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <h3>RESULTS:</h3>
+        </div>
+    </div>
+</body>
+
+</html>

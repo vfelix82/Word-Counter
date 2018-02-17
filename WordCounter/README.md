@@ -26,10 +26,3 @@ Program will search through the group of words for the specific word. It will al
 group of words input: apple apple oranges laptop apple mice apple
 //output
 Recurring word: apple 4 times
-
-//Behavior
-Program will search all duplicates even if its different cases.
-//input
-Apple, APPLE, apple
-//output
-Recurring word: apple 3 times
