@@ -10,9 +10,9 @@ namespace WordCounter.Tests
     [TestClass]
     public class HomeControllerTest
     {
-      //Checks if Returns correct View
+
       [TestMethod]
-      public void Index_ReturnsCorrectView_True()
+      public void Index_Return_True()
       {
 
       }

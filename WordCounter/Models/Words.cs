@@ -4,20 +4,13 @@ using System.Linq;
 namespace WordCounter.Models
 {
     // Class Object
-    public class WordsCounter
+    public class WordFrequency
     {
         private string _inputSentence;
         private string _inputWord;
-        private int _wordCount = 0;
 
         // Constructor
-        public WordsCounter()
-        {
-            _inputSentence = "";
-            _inputWord = "";
-        }
-
-        public WordsCounter(string sentence, string word)
+        public WordFrequency(string sentence, string word)
         {
             _inputSentence = sentence;
             _inputWord = word;
@@ -32,11 +25,7 @@ namespace WordCounter.Models
         {
             return _inputWord;
         }
-        public int GetWordCount()
-        {
 
-            return _wordCount;
-        }
         // Setters
         public void SetSentence(string setSentence)
         {
@@ -45,6 +34,20 @@ namespace WordCounter.Models
         public void SetWord(string setWord)
         {
             _inputWord = setWord;
+        }
+        // Find Frequency split
+        public int FindFrequency()
+        {
+            int frequency = 0;
+            string[] splitSentence = _inputSentence.Split();
+            foreach (string word in splitSentence)
+            {
+                if (word == _inputWord)
+                {
+                    frequency += 1;
+                }
+            }
+            return frequency;
         }
     }
 }

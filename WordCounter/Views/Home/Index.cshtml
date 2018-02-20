@@ -18,8 +18,8 @@
                     <input id='groupofwords' name='groupofwords' class='form-control' type='text'>
                 </div>
                 <div class='form-group'>
-                    <label for='title'>Enter specific word:</label>
-                    <input id='title' name='title' class='form-control' type='text'>
+                    <label for='specificword'>Enter specific word:</label>
+                    <input id='specificword' name='specificword' class='form-control' type='text'>
                 </div>
                 <button type="submit" class="btn btn-dark btn-lg">Submit</button>
             </form>
@@ -27,7 +27,11 @@
     </div>
     <div class="container">
         <div class="col-md-12">
-            <h3>RESULTS:</h3>
+            @if (Model != null)
+            {
+            <h3><strong>Group of words:</strong> @Model.GetSentence()</h3>
+            <h3><strong>Word:</strong> @Model.GetWord() <strong>Frequency:</strong> @Model.FindFrequency()</h3>
+            }
         </div>
     </div>
 </body>
