@@ -16,7 +16,7 @@ namespace WordCounter.Controllers
         public ActionResult Form(){
         string groupInput = Request.Form["groupofwords"];
         string specificInput = Request.Form["specificword"];
-        WordFrequency userInput = new WordFrequency(groupInput, specificInput);
+        ReapeatCounter userInput = new ReapeatCounter(groupInput, specificInput);
         return View("Index", userInput);
         }
 

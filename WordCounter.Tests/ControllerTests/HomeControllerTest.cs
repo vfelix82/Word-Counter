@@ -14,7 +14,13 @@ namespace WordCounter.Tests
       [TestMethod]
       public void Index_Return_True()
       {
+           HomeController controller = new HomeController();
+           IActionResult actionResult = controller.Index();
+           ViewResult indexView = controller.Index() as ViewResult;
 
-      }
+           var result = indexView.ViewData.Model;
+
+           Assert.IsInstanceOfType(result, typeof(ViewResult));
+       }
     }
 }

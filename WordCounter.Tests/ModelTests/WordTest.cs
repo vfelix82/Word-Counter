@@ -8,10 +8,24 @@ namespace WordCounter.Tests
     public class WordFrequencyTest
     {
         [TestMethod]
-        public void Test_WordFrequency_True()
+        public void Test_ReapeatCounter_Single_Word_True()
         {
-            WordFrequency testFrequency = new WordFrequency;
-            Assert.AreEqual(1, testFrequency.FindFrequency("Love Love Love"));
+            ReapeatCounter testReapeatCounter = new ReapeatCounter("I Love you", "Love");
+            Assert.AreEqual(1, testReapeatCounter.FindDuplicates());
+        }
+
+        [TestMethod]
+        public void Test_ReapeatCounter_Multiple_Words_True()
+        {
+            ReapeatCounter testReapeatCounter = new ReapeatCounter("I Love to Love", "Love");
+            Assert.AreEqual(2, testReapeatCounter.FindDuplicates());
+        }
+
+        [TestMethod]
+        public void Test_ReapeatCounter_Case_Sensitive_True()
+        {
+            ReapeatCounter testReapeatCounter = new ReapeatCounter("I Love to Love", "i");
+            Assert.AreEqual(1, testReapeatCounter.FindDuplicates());
         }
      }
 }

@@ -4,16 +4,16 @@ using System.Linq;
 namespace WordCounter.Models
 {
     // Class Object
-    public class WordFrequency
+    public class ReapeatCounter
     {
         private string _inputSentence;
         private string _inputWord;
 
         // Constructor
-        public WordFrequency(string sentence, string word)
+        public ReapeatCounter(string sentence, string word)
         {
-            _inputSentence = sentence;
-            _inputWord = word;
+            _inputSentence = sentence.ToLower();
+            _inputWord = word.ToLower();
         }
 
         // Getters
@@ -35,19 +35,20 @@ namespace WordCounter.Models
         {
             _inputWord = setWord;
         }
+
         // Find Frequency split
-        public int FindFrequency()
+        public int FindDuplicates()
         {
-            int frequency = 0;
+            int duplicates = 0;
             string[] splitSentence = _inputSentence.Split();
             foreach (string word in splitSentence)
             {
                 if (word == _inputWord)
                 {
-                    frequency += 1;
+                    duplicates += 1;
                 }
             }
-            return frequency;
+            return duplicates;
         }
     }
 }

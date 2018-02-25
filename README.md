@@ -11,6 +11,10 @@ Enter a group of words then enter a word to find it's frequency.
 ## Setup/Installation Requirements
 
 * Clone from github
+* Type dotnet restore in terminal
+* Type dotnet run in terminal
+* Open web browser
+* Go to localhost:5000/home
 
 ## Known Bugs
 
