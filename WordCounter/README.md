@@ -7,40 +7,45 @@ What will the project consist of?
 4. The output will be the specific word and how frequent the word appeared in the given string.
 5. The program should be case insensitive.
 
-//Behavior
+**Behavior**
 User input a group of words.
 
-//input
+**Input**
 apple oranges apple laptop mice oranges apple mice
 
-//output
+**Output**
 "apple, oranges, apple, laptop, mice, oranges, apple, mice"
 
 
-//Behavior
+
+**Behavior**
 User input a specific word from the first input.
 
-//input
+**Input**
 apple
 
-//output
+**Output**
 "apple"
 
-//Behavior
+
+
+**Behavior**
 Program will search through the group of words for the specific word. It will also output the specific word and how frequent the word appears.
 
-//input
+**Input**
 group of words input: apple apple oranges laptop apple mice apple
 
-//output
+**Output**
 Recurring word: apple 4 times
 
-//Behavior
+
+
+**Behavior**
 Program will be case insensitive.
 
-//input
+**Input**
 Group of words input: APPLE, APPLE, Apple, oranges
 Specific word input: Apple
 
-//output
+**Output**
 apple 3 times
