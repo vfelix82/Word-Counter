@@ -16,7 +16,7 @@ apple oranges apple laptop mice oranges apple mice
 **Output**
 "apple, oranges, apple, laptop, mice, oranges, apple, mice"
 
-
+-
 
 **Behavior**
 User input a specific word from the first input.
@@ -27,7 +27,7 @@ apple
 **Output**
 "apple"
 
-
+-
 
 **Behavior**
 Program will search through the group of words for the specific word. It will also output the specific word and how frequent the word appears.
@@ -38,7 +38,7 @@ group of words input: apple apple oranges laptop apple mice apple
 **Output**
 Recurring word: apple 4 times
 
-
+-
 
 **Behavior**
 Program will be case insensitive.
